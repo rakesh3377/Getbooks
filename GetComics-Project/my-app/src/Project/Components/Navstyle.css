@@ -1,0 +1,122 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #142d4c;
+    box-shadow: rgba(50, 50, 93, 0.30)0 30px 30px -20px;
+}
+.logo-textarea{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 60px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    
+}
+.nav-logo{
+    color: white;
+}
+.textarea{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px 0;
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.textarea input{
+    width: 100px;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+}
+.textarea input:hover{
+    width: 200px;
+    transition: 1s ease-in-out;
+}
+.search{
+    font-size: 1.6rem;
+    color: #142d4c;
+    margin-top: 10px;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width:100%;
+    line-height: 60px;
+    font-size: 20px;
+    margin-right: 1.5rem;
+}
+
+.nav-links li{
+    padding: 0 30px;
+    list-style: none;
+    color: white;
+    font-weight: 600;
+}
+.nav-links li:hover{
+    color: #42b883;
+}
+.icons{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width:760px){
+    .navbar{
+        display: block;
+    }
+    .logo-textarea{
+        width: 100%;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .icons{
+        display: block;
+        line-height: 60px;
+        margin-right: 20px;
+    }
+    .icons:hover{
+        color: #42b883;
+    }
+    .nav-links{
+        position: fixed;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #9fd3c7;
+        z-index: 1;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+    .nav-links li{
+        border-top: 2px solid white;
+        line-height: 70%;
+        text-align: center;
+        padding: 20px 30px;
+    }
+    .nav-links li:hover{
+        color: #142d4c;
+    }
+}
+.textarea input:hover{
+    width: 100px;
+    transition: 1s ease-in-out;
+}
+.textarea input{
+    width: 75px;
+}
