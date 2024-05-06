@@ -1,10 +1,14 @@
 .navbar{
-    width: 100%;
+    width: 100vw;
     height: 60px;
     display: flex;
     justify-content: space-between;
     background-color: #142d4c;
     box-shadow: rgba(50, 50, 93, 0.30)0 30px 30px -20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
 }
 .logo-textarea{
     width: 50%;
@@ -76,6 +80,7 @@
 @media screen and (max-width:760px){
     .navbar{
         display: block;
+        width: 100vw;
     }
     .logo-textarea{
         width: 100%;

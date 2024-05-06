@@ -1,11 +1,12 @@
 import React from "react";
+import Aboutcontent from "./About/about";
 
 function About(){
     
     return(
-        <di>
-            <h1>About</h1>
-        </di>
+        <div>
+            <Aboutcontent />
+        </div>
     )
 }
 

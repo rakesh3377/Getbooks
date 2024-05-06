@@ -10,6 +10,7 @@
 .images{
     width: 1500px;
 
+
 }
 .slider-wrapper{
     position: relative;
@@ -101,11 +102,11 @@
 
 @media screen and (max-width:760px) {
     .slider{
-        width: 412px;
+        width: 100vw;
         height: 414px;
     }
     .images{
-        width: 412px;
+        width: 100vw;
         height: 414px;
     }    
 }

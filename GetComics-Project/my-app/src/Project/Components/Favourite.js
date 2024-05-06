@@ -1,11 +1,9 @@
 import React from "react";
+import Favour from "./Favourite-compo/favor";
 
-function Favourites(){
-    return(
-        <div>
-            <h1>Favourite
-            </h1>
-        </div>
+function Favourites() {
+    return (
+        <Favour />
     )
 }
 

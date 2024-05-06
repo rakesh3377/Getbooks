@@ -1,0 +1,48 @@
+[
+    {
+        "id":1,
+        "title":"The Batman",
+        "img":"/cards-img/batman-1.webp"
+    },
+    {
+        "id":2,
+        "title":"The Superman Lagacy",
+        "img":"/cards-img/super.jpg"
+    },
+    {
+        "id":3,
+        "title":"The captain ameraica",
+        "img":"/cards-img/captain.jpg"
+    },
+    {
+        "id":4,
+        "title":"The spiderman",
+        "img":"/cards-img/spiderman-1.jpg"
+    },
+    {
+        "id":5,
+        "title":"The Reverseflash",
+        "img":"/cards-img/reversflash.jpg"
+    },
+    {
+        "id":6,
+        "title":"The deadpool vs wol",
+        "img":"/cards-img/dvw.jpg"
+    },
+    {
+        "id":7,
+        "title":"The Invencible",
+        "img":"/cards-img/invencible.jpeg"
+    },
+    {
+        "id":8,
+        "title":"The Boys",
+        "img":"/cards-img/boys.jpg"
+    },
+    {
+        "id":9,
+        "title":"The Batman barve",
+        "img":"/cards-img/bold.jpg"
+    }
+
+]

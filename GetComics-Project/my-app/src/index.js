@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 //import Homepage from './Project/Home';
 import App from './Project/Components/App';
 import './style.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
