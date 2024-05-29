@@ -1,11 +1,15 @@
-.Container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    
-    
+.Footer-como{
+    background: #142d4c;
+    color: white;
 }
 
+.Home-slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
+.Home-col{
+    background-color: #9fd3c7;
+}

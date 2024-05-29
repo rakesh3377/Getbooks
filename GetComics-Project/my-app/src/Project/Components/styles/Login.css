@@ -1,0 +1,108 @@
+/* Container for the login form */
+.Login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Form wrapper */
+.form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header styling */
+header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for the form contents */
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual input container */
+.name-div,
+.password-div {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.name-div label,
+.password-div label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styling */
+.name-div input,
+.password-div input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Input field focus state */
+.name-div input:focus,
+.password-div input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container for buttons */
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button styling */
+.login-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover state */
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Link styling */
+.btns a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Link hover state */
+.btns a:hover {
+    text-decoration: underline;
+}

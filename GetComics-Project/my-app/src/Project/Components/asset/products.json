@@ -2,47 +2,64 @@
     {
         "id":1,
         "title":"The Batman",
-        "img":"/cards-img/batman-1.webp"
+        "img":"/cards-img/batman-1.webp",
+        "file":"/pdf/invencible.pdf"
     },
     {
         "id":2,
         "title":"The Superman Lagacy",
-        "img":"/cards-img/super.jpg"
+        "img":"/cards-img/super.jpg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":3,
         "title":"The captain ameraica",
-        "img":"/cards-img/captain.jpg"
+        "img":"/cards-img/captain.jpg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":4,
         "title":"The spiderman",
-        "img":"/cards-img/spiderman-1.jpg"
+        "img":"/cards-img/spiderman-1.jpg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":5,
         "title":"The Reverseflash",
-        "img":"/cards-img/reversflash.jpg"
+        "img":"/cards-img/reversflash.jpg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":6,
         "title":"The deadpool vs wol",
-        "img":"/cards-img/dvw.jpg"
+        "img":"/cards-img/dvw.jpg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":7,
         "title":"The Invencible",
-        "img":"/cards-img/invencible.jpeg"
+        "img":"/cards-img/invencible.jpeg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":8,
         "title":"The Boys",
-        "img":"/cards-img/boys.jpg"
+        "img":"/cards-img/boys.jpg",
+        "file":"/pdf/invencible.pdf"
+
     },
     {
         "id":9,
         "title":"The Batman barve",
-        "img":"/cards-img/bold.jpg"
+        "img":"/cards-img/bold.jpg",
+        "file":"/pdf/invencible.pdf"
+
     }
 
 ]

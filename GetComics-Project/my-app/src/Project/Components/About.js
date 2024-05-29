@@ -1,13 +1,23 @@
 import React from "react";
-import Aboutcontent from "./About/about";
+import Navbar from "./Navbar";
+import About from "./About/about";
+import './styles/aboutinfo.css';
+import Footer from "./Home-components/footer";
 
-function About(){
-    
+const Aboutcontent =() =>{
     return(
-        <div>
-            <Aboutcontent />
+        <section className="about-contain">
+        <div className="about-nav">
+            <Navbar />
         </div>
+        <div>
+            <About />
+        </div>
+        <div className="about-foot">
+            <Footer />
+        </div>
+        </section>
     )
-}
+};
 
-export default About;
+export default Aboutcontent;

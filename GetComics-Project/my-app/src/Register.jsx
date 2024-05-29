@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../src/Project/Components/styles/register.css';
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import './Project/Components/styles/register.css';
 
 function Register(){
     const[id, idchange] = useState('');
@@ -57,8 +58,8 @@ function Register(){
             headers:{'content-type':'application/json'},
             body:JSON.stringify(regobj)
         }).then((res)=>{
-            toast.success('Registered succussfully.')
-            navigate('/Login');
+            toast.success('Signed succussfully.')
+            navigate('/Home');
         }).catch((err)=>{
             toast.error('Failed :'+err.message);
         });
@@ -67,28 +68,28 @@ function Register(){
     return(
         <div className="register-container">
             <form onSubmit={handlesumbit}>
-                <header><h1>Register</h1></header>
-                <div className="content">
-                     <div className="inputs">
+                <header><h1>Sign in</h1></header>
+                <div className="contents">
+                     <div className="inputs-div">
                         <label htmlFor="name">Name</label>
                         <input value={id} onChange={e=>idchange(e.target.value)} id="name" type="text" />
                     </div>
-                    <div className="inputs">
+                    <div className="inputs-div">
                         <label htmlFor="email">Email Id</label>
                         <input value={email} onChange={e=>emailchange(e.target.value)} id="email" type="text" />
                     </div>
-                    <div className="inputs">
+                    <div className="inputs-div">
                         <label htmlFor="phone">Phone no</label>
                         <input value={phone} onChange={e=>phonechange(e.target.value)} id="phone" type="text" />
                     </div>
-                    <div className="inputs">
+                    <div className="inputs-div">
                         <label htmlFor="password">Create password</label>
                         <input value={password} onChange={e=>passwordchange(e.target.value)} id="password" type="password" />
                     </div>
-                </div>
-                <footer>
-                    <button>Register</button>
+                    <footer>
+                    <button>Sign up</button>
                 </footer>
+                </div>
             </form>
         </div>
     )

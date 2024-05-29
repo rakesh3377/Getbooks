@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { GrClose } from "react-icons/gr";
-import Home from "./Home";
+//import Home from "./Home";
 
 function Navbar() {
     const [open, setopen] = useState(false);
@@ -15,13 +15,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="logo-textarea">
                     <div className="logo">
-                        <Link to='/Home' className="nav-logo">Get Comics</Link>
-                    </div>
-                    <div className="textarea">
-                        <input type="text" placeholder="Search....." />
-                        <div className="search">
-                            <FaSearch />
-                        </div>
+                        <Link to='/Home' className="nav-logo">Get books</Link>
                     </div>
                     <div className="icons" onClick={handleclick}>
                         {open ? <GrClose /> : <HiOutlineMenuAlt2 />}
@@ -30,8 +24,7 @@ function Navbar() {
                 <ul className={open ? "nav-links active" : "nav-links"}>
                     <Link to='/Home' className="link"><li onClick={closemenu}>Home</li></Link>
                     <Link to='/About' className="link"><li onClick={closemenu}>About</li></Link>
-                    <Link to='/Events' className="link"><li onClick={closemenu}>Updates</li></Link>
-                    <Link to='/Favourite' className="link"><li onClick={closemenu}>Favourites</li></Link>
+                    <Link to='/Events' className="link"><li onClick={closemenu}>Ads</li></Link>
                 </ul>
             </nav>
         </>
