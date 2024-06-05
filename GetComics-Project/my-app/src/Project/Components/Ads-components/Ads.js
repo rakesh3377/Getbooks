@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import '../styles/ads.css';
 
@@ -11,7 +11,6 @@ const Dogform = () => {
     const [description, setDescription] = useState("");
     const [phone, setPhone] = useState("");
     const [address, setAddress] = useState("");
-    const [errorMessage, setErrorMessage] = useState("");
     const [title, setTitle] = useState("");
 
     const [image, setImage] = useState(null);
@@ -64,9 +63,6 @@ const Dogform = () => {
             toast.warning(errorMessage)
         }
         
-
-
-        setErrorMessage(errorMessage);
         return isProceed;
     }
     const handleImageChange = (e) => {
