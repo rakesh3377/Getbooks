@@ -1,6 +1,5 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
-import img from '../back-img/space.jpg'
 import '../styles/cardinfo.css'
 
 export default function Cardinfo({show, item, onclose}){
@@ -13,7 +12,7 @@ export default function Cardinfo({show, item, onclose}){
         <>
         <div className="overlay">
             <div className="overlay-inner">
-                <button className="close" onClick={onclose}><FaTimes /></button>
+                <button className="closee" onClick={onclose}><FaTimes /></button>
                 <div className="inner-box">
                     <img src={thumbnail} ></img>
                     <div className="info">

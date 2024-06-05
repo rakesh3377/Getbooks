@@ -53,7 +53,7 @@ function Register(){
         console.log(regobj);
         if(isvalidate()){
         //applying fetch//
-        fetch("http://localhost:8000/user",{
+        fetch("https://newserverdata.onrender.com/user",{
             method:"POST",
             headers:{'content-type':'application/json'},
             body:JSON.stringify(regobj)
@@ -87,7 +87,7 @@ function Register(){
                         <input value={password} onChange={e=>passwordchange(e.target.value)} id="password" type="password" />
                     </div>
                     <footer>
-                    <button>Sign up</button>
+                    <button className="sign-btn">Sign up</button>
                 </footer>
                 </div>
             </form>

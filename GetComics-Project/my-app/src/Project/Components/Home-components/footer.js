@@ -24,8 +24,7 @@ export default function Footer() {
                     <ul>
                         <Link to='/Home'><li>Home</li></Link>
                         <Link to='/About' ><li>About</li></Link>
-                        <Link to='/Events'><li> Updates</li></Link>
-                        <Link to='/Favourite'><li>Favourites</li></Link>
+                        <Link to='/Events'><li> Ads</li></Link>
                     </ul>
                 </div>
                 <h4>All copyrights@ 2024</h4>

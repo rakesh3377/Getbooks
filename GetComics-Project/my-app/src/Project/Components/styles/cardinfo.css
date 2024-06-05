@@ -21,7 +21,7 @@
     overflow: hidden;
     font-size: 1.3rem;
 }
-.overlay-inner .close{
+.overlay-inner .closee{
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -57,7 +57,7 @@
     border: none;
     width: 100px;
     border-radius: 5px;
-    background-color: lightblue;
+    background-color: rgb(230, 100, 143);
     padding: 0.3rem;
     font-weight: bold;
 }
@@ -65,4 +65,10 @@
     margin-top: 2rem;
     text-align: justify;
     font-size: 13px;
+}
+
+@media screen and (max-width:760px) {
+    .overlay-inner .inner-box h1{
+        font-size: 1.5rem;
+    }
 }

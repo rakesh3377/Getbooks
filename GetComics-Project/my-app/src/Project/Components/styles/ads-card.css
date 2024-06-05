@@ -1,0 +1,112 @@
+.ads-col{
+    background: #c7b198;
+    position: relative;
+}
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.addicon {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #402a23;
+}    
+.addicon .icon-plus{
+   margin-top: 5px;
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+.addicon h1{
+    font-size: 2rem;
+    color: white;
+}
+.ico{
+    margin-top: 5px;
+}
+
+.ads-nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+}
+
+span{
+    font-size: 1.3rem;
+
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for the product image */
+.product-image {
+    height: 200px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styling for the product details */
+.product-details {
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-details p {
+    margin: 10px 0;
+    color: #333;
+    
+}
+.maincontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-details p:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.product-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Styling for the product title */
+.product-details {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #000;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+    .maincontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+}

@@ -1,22 +1,22 @@
 export const Sliderimage = [
     {
         image: "/images/book-1.jpg",
-        title: "Batman-Brave and the Bold",
+        title: "storyscapes",
     },
     {
         image: "/images/book-2.jpg",
-        title: "Justice Leage",
+        title: "A library is Garden where wisdom blooms",
     },
     {
-        image: "/images/book-3.jpg",
-        title: "flash point-paradox",
+        image: "/images/dc-family2.png",
+        title: "Dive into the world of comics",
     },
     {
         image: "/images/book-4.jpg",
-        title: "Invecible",
+        title: "Explore the Tamil stories",
     },
     {
         image: "/images/book-5.jpg",
-        title: "Avengers vs X-men",
+        title: "Agni Siragugal",
     },
 ];

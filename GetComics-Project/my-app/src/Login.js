@@ -14,11 +14,11 @@ export default function Login() {
         if (validate()) {
             //implementing fetch.....
             //console.log("Proceed");
-            fetch("http://localhost:8000/user/" + username).then((res) => {
+            fetch("https://newserverdata.onrender.com/user/"+username).then((res) => {
                 return res.json();
             }).then((resp) => {
-                //console.log(res)
-                if (Object.keys(resp).length === 0) {
+                console.log(resp)
+                if (Object.keys(resp).length===0) {
                     toast.error("Please enter valid username");
                 } else {
                     if (resp.password === userpassword) {

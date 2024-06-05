@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import space from "../back-img/space.jpg";
 import Card from "./card";
 import '../styles/cards.css'
 import axios from 'axios'
@@ -21,7 +20,7 @@ export default function Search() {
         <>
             <div className="header">
                 <div className="row1">
-                    <h1 className="heanding">A room without books is like<br />a boody without soul</h1>
+                    <h1 className="heanding">In the world of books, you can travel far and wide,<br />without ever leaving your site</h1>
                 </div>
                 <div className="row2">
                     <h2>Find your book</h2>

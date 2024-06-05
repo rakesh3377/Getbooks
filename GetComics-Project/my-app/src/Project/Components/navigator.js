@@ -3,7 +3,6 @@ import React from "react"
 import Home from './Home'
 import About from './About'
 import Events from './Events'
-import Favourites from './Favourite'
 import Login from '../../Login'
 import Register from '../../Register'
 import Dogform from './Ads-components/Ads'
@@ -22,7 +21,6 @@ export default function Main() {
                     <Route path='/Home' element={<Home />}></Route>
                     <Route path='/About' element={<About />}></Route>
                     <Route path='/Events' element={<Events />}></Route>
-                    <Route path='/Favourite' element={<Favourites />}></Route>
                     <Route path='/ads' element={<Dogform/>}></Route>
                 </Routes>
             </BrowserRouter>

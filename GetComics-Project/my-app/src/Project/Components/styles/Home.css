@@ -1,5 +1,5 @@
 .Footer-como{
-    background: #142d4c;
+    background: #402a23;
     color: white;
 }
 
@@ -11,5 +11,12 @@
 }
 
 .Home-col{
-    background-color: #9fd3c7;
+    background-color: #c7b198;
+}
+
+@media screen and (max-width:760px){
+    .Footer-como{
+        margin-top: 140px;
+       
+    }
 }

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import '../styles/ads.css';
 
 const Dogform = () => {
@@ -20,48 +21,49 @@ const Dogform = () => {
 
     const isValidate = () => {
         let isProceed = true;
-        let errorMessage = '';
+        let errorMessage = 'please enter the';
         if (!phone) {
             isProceed = false;
-            errorMessage += 'please enter phone Number';
+            errorMessage += 'Number, ';
         }
         if (phone && !/^[6-9]\d{9}$/) {
             isProceed = false;
             errorMessage += 'please enter valid phone Number';
+
         }
         if (!username) {
             isProceed = false;
-            errorMessage += 'Please enter the Full Name. ';
+            errorMessage += 'Name, ';
         }
         if (!address) {
             isProceed = false;
-            errorMessage += 'Please enter the Address. ';
+            errorMessage += 'Address, ';
         }
         if (!id) {
             isProceed = false;
-            errorMessage += 'Please enter the Email. ';
+            errorMessage += 'Email, ';
         }
         if (id && !/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(id)) {
             isProceed = false;
-            errorMessage += 'Please enter a valid email. ';
+            errorMessage += 'valid email, ';
         }
         if (!description) {
             isProceed = false;
-            errorMessage += 'Please enter the description. ';
+            errorMessage += 'description, ';
         }
         if (!price) {
             isProceed = false;
-            errorMessage += 'Please enter the price. ';
+            errorMessage += 'price, ';
         }
 
-        if (!image) {
-            isProceed = false;
-            errorMessage += 'Please upload image. ';
-        }
         if (!title) {
             isProceed = false;
-            errorMessage += 'Please upload title. ';
+            errorMessage += ' Book title, ';
         }
+        if(!isProceed){
+            toast.warning(errorMessage)
+        }
+        
 
 
         setErrorMessage(errorMessage);
@@ -85,9 +87,9 @@ const Dogform = () => {
         e.preventDefault();
 
         if (isValidate()) {
-            const formData = { username, id, phone, address, image, description, price };
+            const formData = { username, id, phone, address, image, description, price, title };
 
-            fetch("http://localhost:8000/ads", {
+            fetch("https://newserverdata-2.onrender.com/ads", {
                 method: "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
@@ -160,9 +162,7 @@ const Dogform = () => {
                                     </div>
                                 </div>
 
-                                <div className="error-message">
-                                    {errorMessage && <p className="text-danger">{errorMessage}</p>}
-                                </div>
+                                
                             </div>
                         </div>
                         <div className="card-footer">

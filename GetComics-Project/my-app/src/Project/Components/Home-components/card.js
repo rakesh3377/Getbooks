@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import image from '../back-img/space.jpg'
 import '../styles/cards.css'
 import Cardinfo from "./cardinfo";
 

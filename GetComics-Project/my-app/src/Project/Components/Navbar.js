@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import './Navstyle.css'
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { GrClose } from "react-icons/gr";
+import { ImBooks } from "react-icons/im";
 //import Home from "./Home";
 
 function Navbar() {
@@ -15,6 +15,7 @@ function Navbar() {
             <nav className="navbar">
                 <div className="logo-textarea">
                     <div className="logo">
+                        <ImBooks className="book-i"/>
                         <Link to='/Home' className="nav-logo">Get books</Link>
                     </div>
                     <div className="icons" onClick={handleclick}>
