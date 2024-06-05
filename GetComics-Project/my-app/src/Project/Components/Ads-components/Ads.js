@@ -94,6 +94,7 @@ const Dogform = () => {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)
             }).then((res) => {
+                toast.success("Ad successfully posted")
                 navigate('/home');
             }).catch((err) => {
                 console.error('Failed :' + err.message);

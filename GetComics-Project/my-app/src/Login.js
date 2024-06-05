@@ -22,7 +22,7 @@ export default function Login() {
                     toast.error("Please enter valid username");
                 } else {
                     if (resp.password === userpassword) {
-                        toast.success("Sucuss")
+                        toast.success("Login successful")
                         usenavigate('/Home')
                     } else {
                         toast.error("Please enter valid password");
